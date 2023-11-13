@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Segoe UI Semibold';
+    src: url('../fonts/SegoeUISemiBold.woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Regular';
+    src: url('../fonts/SegoeUIRegular.woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    src: url('../fonts/SegoeUIBold.woff');
+    font-style: normal;
+}
+
+.delivery-variant__content-point {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.delivery-price {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.point-organization {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #000;
+    font-family: 'Segoe UI Semibold';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; 
+    
+}
+
+.point-devlivery {
+    margin-bottom: 4px;
+    color:  #000;
+
+    /* Сайт/Body */
+    font-family: 'Segoe UI Semibold';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.point-organization__rate {
+    margin-right: 8px;
+}
+
+.delivery-variant .point-organization__icon {
+    margin-right: 4px;
+}
+
+.delivery-dates {
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-dates__item#first-date {
+    display: none;
+}
+
+.delivery-dates__item-date {
+    min-width: 177px;
+    margin-right: 32px;
+}
+
+.delivery-dates__item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.delivery-dates-src {
+    margin-right: 8px;
+    width: 40px;
+    height: 56px;
+    border-radius: 8px;
+}
+
+.delivery-dates__item-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.delivery-dates__item-products .first-date {
+    background: red;
+}
+
+.delivery-dates-count.count-main {
+    /* display: none; */
+    position: absolute;
+    left: 30px;
+    top: -6px;
+    color:  #FFF;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; 
+}
+
+.delivery-variant__return .delivery-return__group{
+    margin-left: 4px;
+}
+
+.delivery-variant__return {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.delivery-dates-container {
+    position: relative;
+}
+
+.delivery-price__content {
+    color: #000;
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.delivery-variant__title {
+    margin-bottom: 16px;
+}

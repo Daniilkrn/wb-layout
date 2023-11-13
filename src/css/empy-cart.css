@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Segoe UI Semibold';
+    src: url('../fonts/SegoeUISemiBold.woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Regular';
+    src: url('../fonts/SegoeUIRegular.woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    src: url('../fonts/SegoeUIBold.woff');
+    font-style: normal;
+}
+
+.cart-content__title {
+    font-family: 'Segoe UI Bold';
+}
+
+.cart-content__desc {
+    font-family: 'Segoe UI Regular';
+    font-size: 18px;
+}
+
+.cart-content__btn {
+    background-color: #cb11ab;
+    border: 2px solid #cb11ab;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 8px 24px 10px;
+    margin-top: 20px;
+    font-family: 'Segoe UI Semibold';
+}

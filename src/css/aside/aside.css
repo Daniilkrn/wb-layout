@@ -1,0 +1,169 @@
+.asidebar-total__price {
+    font-family: 'Segoe UI Bold';
+    color:  #000;
+    /* Сайт/H2-new */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: -0.24px;
+}
+
+.asidebar-total__title {
+    font-family: 'Segoe UI Bold';
+    color:  #000;
+    /* Сайт/H2-new */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: -0.24px;
+}
+
+.asidebar-total__price-desc {
+    font-family: 'Segoe UI Bold';
+    color: #000;
+    /* Сайт/Н3-new */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+}
+
+.asidebar-total-count, 
+.asidebar-discount,
+.asidebar-delivery {
+    color:  #000;
+    font-family: 'Segoe UI Regular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.delivery__endpoint {
+    font-family: 'Segoe UI Regular';
+    margin-bottom: 4px;
+    color:  #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; 
+}
+
+.delivery__date-text {
+    font-family: 'Segoe UI Regular';
+    color: #CB11AB;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; 
+}
+
+.delivery-return__text {
+    position: relative;
+    color:  #000;
+    font-family: 'Segoe UI Regular';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* .delivery-return__status-text::after {
+    position: absolute;
+    content: '11';
+    background-image: url(./src/svg/dotted-green.svg);
+} */
+
+.card-number {
+    font-family: 'Segoe UI Regular';
+    color:  #000;
+    text-align: right;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; 
+}
+
+.delivery-payment__time {
+    font-family: 'Segoe UI Regular';
+    color:  #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-payment__time-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.confidicial-policy .accept-confidicial__text {
+    font-family: 'Segoe UI Regular';
+    color:  #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; 
+    margin-left: 8px;
+}
+
+.underline-aside {
+    color: #000;
+    font-family: 'Segoe UI Regular';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+
+    text-decoration: underline rgba(0, 0, 0, 0.10);
+    text-underline-offset:5px;
+    text-decoration-thickness: 1px;
+    
+}
+
+.underline-aside:hover {
+    cursor: pointer;
+    color: #CB11AB;
+}
+
+.asidebar .payment-variant__content .card-number {
+    color: #000;
+    text-align: right;
+    font-family: Segoe UI;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; 
+}
+
+.asidebar {
+    position: sticky;
+    top: 10px;
+    bottom: 10px;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    max-width: 429px;
+    padding: 16px 24px 24px 24px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.30), 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: max-content;
+    margin-bottom: 16px;
+}
+
+.asidebar-total {
+    margin-bottom: 9px;
+}

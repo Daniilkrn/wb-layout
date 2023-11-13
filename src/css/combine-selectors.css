@@ -1,0 +1,109 @@
+.aside-info {
+    background: #F6F6FA;
+    border-radius: 8px;
+    padding: 8px 8px 12px 8px;
+    display: flex;
+}
+
+.aside-heading {
+    color:  #000;
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+}
+
+.section-title {
+    font-family: 'Segoe UI Bold';
+    color: #000;
+    font-family: Segoe UI;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: -0.24px;
+}
+
+.modal-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.modal-inner .btn-container{
+    margin-top: auto;
+}
+
+.btn-main {
+    background-color: #cb11ab;
+    border: 2px solid #cb11ab;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 8px 24px 10px;
+}
+
+.delivery-variant-name {
+    min-width: 153px;
+    color:  #000;
+    font-family: 'Segoe UI Bold';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    margin-right: 32px;
+}
+
+.count-main,
+.count-mobile {
+    position: absolute;
+    background: red;
+    top: -5px;
+    left: 35px;
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    transform: rotate(0.074deg);
+    padding: 0px 2px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #F55123;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Segoe UI Semibold';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; 
+    z-index: 101;
+}
+
+.count-mobile {
+    top: -5px;
+    left: 20px;
+}
+
+.second-date,
+.first-date {
+    color: #000;
+    font-family: 'Segoe UI Bold';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin-right: 32px;
+}

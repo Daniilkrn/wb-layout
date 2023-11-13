@@ -1,0 +1,161 @@
+[class*="-icon"]{
+    cursor: pointer;
+}
+
+.header-search-submit {
+    width: 24px;
+    height: 24px;
+    opacity: 0.4;
+}
+
+.product-item__favorites-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    fill: black;
+}
+
+.product-item__favorites-icon:hover  {
+    fill: #CB11AB;
+}
+
+.product-item__favorites-icon--active {
+    fill: #CB11AB;
+}
+
+.product-item__trash-icon:hover{
+    fill: #F55123;
+}
+
+.product-item__trash-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.prodcut-item__saler-icon{
+    width: 20px;
+    height: 20px;
+    fill: #F6F6FA;
+}
+
+.delivery-redact-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.delivery__date-text {
+    color: #CB11AB;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px; 
+}
+
+.dotted-icon {
+    width: 49px;
+    height: 2px;
+    stroke-width: 1px;
+    stroke: rgba(203, 17, 171, 0.20);
+}
+
+.dotted-delivery{
+    width: 64px;
+    height: 2px;
+}
+
+.accept-confidicial {
+    width: 13px;
+    height: 24px;
+}
+
+.header-profile-icon {
+    width: 28px;
+    height: 29px;
+}
+
+.header-cart-icon {
+    width: 28px;
+    height: 29px;
+}
+
+.cart-content-spoiler {
+    width: 20px;
+    height: 20px;
+}
+
+.cart-content-spoiler--active {
+    transform: rotate(180deg);
+}
+
+.close-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.visa-icon {
+    width: 32px;
+    height: 24px;
+}
+
+.mastercard-second-icon {
+    width: 32px;
+    height: 24px;
+}
+
+.mastercard-icon {
+    width: 32px;
+    height: 24px;
+}
+
+.point-organization__icon {
+    width: 12px;
+    height: 12px;
+}
+
+.delivery-item__trash-courier,
+.delivery-item__trash-point{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    fill: #9797AF;
+}
+
+.burger-desktop {
+    width: 28px;
+    height: 24px;
+}
+
+.burger-mobile{
+    width: 28px;
+    height: 28px;
+}
+
+.search-submit-mobile{
+    width: 28px;
+    height: 28px;
+    fill: white;
+}
+
+.mobile-cart-icon{
+    width: 28px;
+    height: 28px;
+}
+
+.mobile-home-icon{
+    width: 28px;
+    height: 28px;
+}
+
+.mobile-catalog-icon{
+    width: 28px;
+    height: 28px;
+}
+
+.mobile-favorites-icon{
+    width: 28px;
+    height: 28px;
+}
+
+.mobile-profile-icon{
+    width: 28px;
+    height: 28px;
+}

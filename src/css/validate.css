@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Segoe UI Semibold';
+    src: url('../fonts/SegoeUISemiBold.woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Regular';
+    src: url('../fonts/SegoeUIRegular.woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    src: url('../fonts/SegoeUIBold.woff');
+    font-style: normal;
+}
+
+.input-error {
+    /* position: absolute; */
+    color:  #F55123;
+    font-family: Segoe UI;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; 
+}
+
+.recepient-container {
+    /* position: relative; */
+    width: 100%;
+}
+
+.recepient-container:not(:last-child){
+    margin-right: 24px;
+}
+
+.input-recipient{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.20);
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    color: #9797AF;
+    font-family: 'Segoe UI Regular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.input-recipient {
+    color:  #000;
+    font-family: 'Segoe UI Semibold';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.input-recepient--error {
+    border-bottom: 1px solid #F55123;
+}
+
+.input-recipient:not(:last-child){
+    margin-right: 24px;
+}
+
+.input-error {
+    display: none;
+}
+
+.input-error--active  {
+    color:  #F55123;
+    font-family: Segoe UI;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; 
+    display: block;
+}
+
+.recipient__about-recipient label {
+    width: 100%;
+}
+
+.recipient__about-recipient label:not(:last-child){
+    margin-right: 24px;
+}
+
+.footnote {
+    margin-top: 4px;
+    color: #000;
+    font-family: 'Segoe UI Semibold';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; 
+}
