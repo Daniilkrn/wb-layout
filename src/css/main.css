@@ -144,8 +144,17 @@ a {
 }
 
 .delivery-return__status-text {
+    display: inline-block;
     cursor: pointer;
     color:  #0CB477;
+    position: relative;
+}
+
+.delivery-return__status-text::before {
+    content: url(../svg/dotted-green.svg);
+    position: absolute;
+    top: 4px;
+    left: 0px;
 }
 
 .delivery-payment {
@@ -416,3 +425,30 @@ a {
     display: flex;
     flex-direction: column;
 }
+
+.input-desc{
+    font-size: 13px;
+    display: none;
+}
+
+.mobile-size{
+    display: none;
+}
+
+.recipient-label{
+    position: relative;
+}
+
+.input-desc{
+    position: absolute;
+    color:  #A0A0A4;
+    font-family: Segoe UI;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; 
+    top: -18px;
+}
+
+
+

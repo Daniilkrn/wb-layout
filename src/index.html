@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +19,6 @@
     <link rel="stylesheet" href="./css/media.css">
     <title>WB - L0</title>
 </head>
-
 <body>
     <div class="wrapper">
         <header class="header">
@@ -82,8 +80,7 @@
                             </h1>
                             <div class="cart-content__choose-all cart-heading">
                                 <label class="cart-content__label">
-                                    <input class="cart-content__box content-box" type="checkbox" id="select-all"
-                                        name="checkbox" checked>
+                                    <input class="cart-content__box content-box" type="checkbox" id="select-all" name="checkbox" checked>
                                     <span class="custom-checkbox"></span>
                                     <span class="cart-content__checkmark">Выбрать все</span>
                                 </label>
@@ -95,21 +92,28 @@
                                 <div class="product-item" id="1">
                                     <div class="product-item__product-info">
                                         <label class="cart-content__label">
-                                            <input class="item-checkbox content-box" type="checkbox" id="product-checkbox1"
-                                                name="checkbox" checked>
-                                            <span class="custom-checkbox"></span>
+                                            <input class="item-checkbox content-box" type="checkbox" id="product-checkbox1" name="checkbox" checked>
+                                            <span class="custom-checkbox mobile-checkbox"></span>
                                             <div class="prodcut-item_image-container">
-                                                <img class="product-item__item-image" src="./images/product-shirt.png"
-                                                    alt="product-shirt">
+                                                <img class="product-item__item-image" src="./images/product-shirt.png" alt="product-shirt">
                                             </div>
+                                            <span class="mobile-size">56</span>
                                         </label>
                                         <div class="product-item__about">
+                                            <!-- <div class="total-info-mobile">
+                                                <div class="price-new">
+                                                    <span class="price-content"></span>
+                                                    <span class="price-desc"></span>
+                                                </div>
+                                                <p class="old-value-mobile"></p>
+                                                <p class="old-value-hover" style="display: none;"></p>
+                                            </div> -->
                                             <p class="product-item__item-position">Футболка UZcotton мужская</p>
                                             <p class="product-item__characteristic">
                                                 <span class="product-item__characteristic-name">Цвет:</span>
                                                 <span class="product-item__characteristic-color">&nbsp;белый</span>
-                                                <span class="product-item__characteristic-name">Размер:</span>
-                                                <span class="product-item__characteristic-color">&nbsp;56</span>
+                                                <span class="product-item__characteristic-name" id="size">Размер:</span>
+                                                <span class="product-item__characteristic-color"id="size-content">&nbsp;56</span>
                                             </p>
                                             <p class="prodcut-item__strorage">
                                                 Коледино WB
@@ -122,10 +126,7 @@
                                                 <span class="prodcut-item__saler-tip">
                                                     <span class="saler-tip__heading">OOO Вайлдберриз</span>
                                                     <span class="saler-tip__goverment">ОГРН: 5167746237148</span>
-                                                    <span class="saler-tip__address">129337, Москва, улица Красная Сосна, 2,
-                                                        корпус 1, стр. 1,
-                                                        помещение 2, офис 34
-                                                    </span>
+                                                    <span class="saler-tip__address">129337, Москва, улица Красная Сосна, 2,корпус 1, стр. 1, помещение 2, офис 34</span>
                                                 </span>
                                             </p>
                                         </div>
@@ -153,35 +154,34 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <div class="total-info">
+                                        <div class="total-info" id="item-price-desktop">
                                             <div class="price-new">
                                                 <span class="price-content"></span>
                                                 <span class="price-desc"></span>
                                             </div>
                                             <p class="old-value"></p>
-                                            <p class="old-value-hover" style="display: none;">
-    
-                                            </p>
+                                            <p class="old-value-hover" style="display: none;"></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="product-item" id="2">
                                     <div class="product-item__product-info">
                                         <label class="cart-content__label">
-                                            <input class="item-checkbox content-box" type="checkbox" id="product-checkbox2"
-                                                name="checkbox" checked>
-                                            <span class="custom-checkbox"></span>
+                                            <input class="item-checkbox content-box" type="checkbox"
+                                                id="product-checkbox2" name="checkbox" checked>
+                                            <span class="custom-checkbox mobile-checkbox"></span>
                                             <div class="prodcut-item_image-container">
                                                 <img class="product-item__item-image" src="./images/product-case.png"
                                                     alt="product-case">
                                             </div>
                                         </label>
                                         <div class="product-item__about">
-                                            <p class="product-item__item-position">Силиконовый чехол картхолдер (отверстия)
+                                            <p class="product-item__item-position"><span></span>
+                                                Силиконовый чехол картхолдер (отверстия)
                                                 для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</p>
                                             <p class="product-item__characteristic">
                                                 <span class="product-item__characteristic-name">Цвет:</span>
-                                                <span class="product-item__characteristic-color">прозрачный</span>
+                                                <span class="product-item__characteristic-color">&nbsp;прозрачный</span>
                                             </p>
                                             <p class="prodcut-item__strorage">
                                                 Коледино WB
@@ -194,7 +194,8 @@
                                                 <span class="prodcut-item__saler-tip">
                                                     <span class="saler-tip__heading">OOO Мегапрофстиль</span>
                                                     <span class="saler-tip__goverment">ОГРН: 5167746237148</span>
-                                                    <span class="saler-tip__address">129337, Москва, улица Красная Сосна, 2,
+                                                    <span class="saler-tip__address">129337, Москва, улица Красная
+                                                        Сосна, 2,
                                                         корпус 1, стр. 1,
                                                         помещение 2, офис 34
                                                     </span>
@@ -207,7 +208,8 @@
                                             <div class="product-item__counter-content">
                                                 <button
                                                     class="product-item__counter-decrease product-item__counter-decrease--disabled">−</button>
-                                                <input class="product-item__counter-digit" name="product-item3" type="text" value="1">
+                                                <input class="product-item__counter-digit" name="product-item3"
+                                                    type="text" value="1">
                                                 <button class="product-item__counter-increase">+</button>
                                             </div>
                                             <p class="product-item__balance">
@@ -237,20 +239,21 @@
                                 <div class="product-item" id="3">
                                     <div class="product-item__product-info">
                                         <label class="cart-content__label">
-                                            <input class="item-checkbox content-box" type="checkbox" id="product-checkbox3"
-                                                name="checkbox" checked>
-                                            <span class="custom-checkbox"></span>
+                                            <input class="item-checkbox content-box" type="checkbox"
+                                                id="product-checkbox3" name="checkbox" checked>
+                                            <span class="custom-checkbox mobile-checkbox"></span>
                                             <div class="prodcut-item_image-container">
                                                 <img class="product-item__item-image" src="./images/product-pencil.png"
                                                     alt="product-pencil">
                                             </div>
                                         </label>
                                         <div class="product-item__about">
-                                            <p class="product-item__item-position">Карандаши цветные Faber-Castell "Замок",
+                                            <p class="product-item__item-position">Карандаши цветные Faber-Castell
+                                                "Замок",
                                                 набор 24 цвета, заточенные, шестигранные, Faber-Castell </p>
                                             <p class="product-item__characteristic">
                                                 <span class="product-item__characteristic-name">Цвет:</span>
-                                                <span class="product-item__characteristic-color">белый</span>
+                                                <span class="product-item__characteristic-color">&nbsp;белый</span>
                                             </p>
                                             <p class="prodcut-item__strorage">
                                                 Коледино WB
@@ -263,7 +266,8 @@
                                                 <span class="prodcut-item__saler-tip">
                                                     <span class="saler-tip__heading">OOO Вайлдберриз</span>
                                                     <span class="saler-tip__goverment">ОГРН: 5167746237148</span>
-                                                    <span class="saler-tip__address">129337, Москва, улица Красная Сосна, 2,
+                                                    <span class="saler-tip__address">129337, Москва, улица Красная
+                                                        Сосна, 2,
                                                         корпус 1, стр. 1,
                                                         помещение 2, офис 34
                                                     </span>
@@ -276,7 +280,8 @@
                                             <div class="product-item__counter-content">
                                                 <button
                                                     class="product-item__counter-decrease product-item__counter-decrease--disabled">−</button>
-                                                <input class="product-item__counter-digit" id="product-item2" type="text" value="1">
+                                                <input class="product-item__counter-digit" id="product-item2"
+                                                    type="text" value="1">
                                                 <button class="product-item__counter-increase">+</button>
                                             </div>
                                             <p class="product-item__balance">
@@ -306,7 +311,7 @@
                             </div>
                             <div class="absent-products__title cart-heading">
                                 <p class="absent-products__text"> Отсутствуют
-    
+
                                 </p>
                                 <svg class="cart-content-spoiler" id="absent-spoiler">
                                     <use href="./svg/svg-sprite.svg#cart-content-spoiler"></use>
@@ -315,15 +320,19 @@
                             <div class="absent-products">
                                 <div class="product-item" id="1">
                                     <div class="product-item__product-info">
-                                        <img class="product-item__item-image" src="./images/product-shirt-absent.png"
-                                            alt="product-shirt">
+                                        <div class="cart-content__label">
+                                            <span class="mobile-size">56</span>
+                                            <img class="product-item__item-image"
+                                                src="./images/product-shirt-absent.png" alt="product-shirt">
+                                        </div>
                                         <div class="product-item__about">
                                             <p class="product-item__item-position">Футболка UZcotton мужская</p>
                                             <p class="product-item__characteristic">
                                                 <span class="product-item__characteristic-name">Цвет:</span>
-                                                <span class="product-item__characteristic-color">белый</span>
-                                                <span class="product-item__characteristic-name">Размер:</span>
-                                                <span class="product-item__characteristic-color">&nbsp;56</span>
+                                                <span class="product-item__characteristic-color">&nbsp;белый</span>
+                                                <span class="product-item__characteristic-name" id="size">Размер:</span>
+                                                <span class="product-item__characteristic-color"
+                                                    id="size-content">&nbsp;56</span>
                                             </p>
                                         </div>
                                     </div>
@@ -341,14 +350,16 @@
                                 <div class="product-item" id="2">
                                     <div class="product-item__product-info">
                                         <div class="cart-content__label">
-                                            <img class="product-item__item-image" src="./images/product-case-absent.png" alt="product-case">
+                                            <img class="product-item__item-image" src="./images/product-case-absent.png"
+                                                alt="product-case">
                                         </div>
                                         <div class="product-item__about">
-                                            <p class="product-item__item-position">Силиконовый чехол картхолдер (отверстия)
+                                            <p class="product-item__item-position">Силиконовый чехол картхолдер
+                                                (отверстия)
                                                 для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</p>
                                             <p class="product-item__characteristic">
                                                 <span class="product-item__characteristic-name">Цвет:</span>
-                                                <span class="product-item__characteristic-color">прозрачный</span>
+                                                <span class="product-item__characteristic-color">&nbsp;прозрачный</span>
                                             </p>
                                         </div>
                                     </div>
@@ -366,13 +377,13 @@
                                 <div class="product-item" id="3">
                                     <div class="product-item__product-info">
                                         <div class="cart-content__label">
-                                            <div>
-                                                <img class="product-item__item-image"
-                                                    src="./images/product-pencil-absent.png" alt="product-pencil">
-                                            </div>
+                                            <span class="mobile-size">56/54/52...</span>
+                                            <img class="product-item__item-image"
+                                                src="./images/product-pencil-absent.png" alt="product-pencil">
                                         </div>
                                         <div class="product-item__about">
-                                            <p class="product-item__item-position">Карандаши цветные Faber-Castell "Замок",
+                                            <p class="product-item__item-position">Карандаши цветные Faber-Castell
+                                                "Замок",
                                                 набор 24 цвета, заточенные, шестигранные, Faber-Castell
                                             </p>
                                         </div>
@@ -440,15 +451,11 @@
                                     <img src="./svg/delivery-return-icon.svg" alt="delivery-return-icon">
                                 </div>
                                 <div class="delivery-return__text">
-                                    <p>Обратная доставка товаров на склад при отказе —</p>
-                                    <div class="delivery-return__group">
+                                    <p>Обратная доставка товаров на склад при отказе —
                                         <span class="delivery-return__status-text">
                                             бесплатно
                                         </span>
-                                        <svg class="dotted-delivery">
-                                            <use href="./svg/svg-sprite.svg#dotted-delivery"></use>
-                                        </svg>
-                                    </div>
+                                    </p>
                                 </div>
                                 <p class="delivery-return__tooltip delivery-variant">
                                     Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно
@@ -484,35 +491,39 @@
                             <form class="recipient__form" id="recipient-form" action="" method="post">
                                 <div class="recipient__about-recipient">
                                     <label class="recipient-label">
-                                        <input class="recipient__about-name input-recipient" type="text" name="name" autocomplete="on"
-                                            id="name" placeholder="Имя">
+                                        <span class="input-desc">Имя</span>
+                                        <input class="recipient__about-name input-recipient" type="text" name="name" autocomplete="on" id="name" placeholder="Имя">
                                         <span class="input-error" id="name"></span>
                                     </label>
                                     <label class="recipient-label">
-                                        <input class="recipient__about-surname input-recipient" type="text" autocomplete="on"
-                                            name="surname" id="surname" placeholder="Фамилия">
+                                        <span class="input-desc">Фамилия</span>
+                                        <input class="recipient__about-surname input-recipient" type="text" autocomplete="on" name="surname" id="surname" placeholder="Фамилия">
                                         <span class="input-error" id="surname"></span>
                                     </label>
                                 </div>
                                 <div class="recipient__about-sub">
                                     <div class="recepient-container">
                                         <label class="recipient-label">
-                                            <input class="recipient__about-mail input-recipient" type="email" autocomplete="on"
-                                                name="email" id="email" placeholder="Почта">
+                                            <span class="input-desc">Почта</span>
+                                            <input class="recipient__about-mail input-recipient" type="email"
+                                                autocomplete="on" name="email" id="email" placeholder="Почта">
                                             <span class="input-error" id="email"></span>
                                         </label>
                                     </div>
                                     <div class="recepient-container">
                                         <label class="recipient-label">
-                                            <input class="recipient__about-phone input-recipient" type="tel" autocomplete="on"
-                                                maxlength="30" name="phone" id="phone" placeholder="Телефон">
+                                            <span class="input-desc">Телефон</span>
+                                            <input class="recipient__about-phone input-recipient" type="tel"
+                                                autocomplete="on" maxlength="30" name="phone" id="phone"
+                                                placeholder="Телефон">
                                             <span class="input-error" id="phone"></span>
                                         </label>
                                     </div>
-                                    <div class="recepient-container">
+                                    <div class="recepient-container" id="recipient-customer">
                                         <label class="recipient-label">
-                                            <input class="recipient__about-customs input-recipient" type="text" autocomplete="on"
-                                                name="customs" id="customs" placeholder="ИНН"
+                                            <span class="input-desc">ИНН</span>
+                                            <input class="recipient__about-customs input-recipient" type="text"
+                                                autocomplete="on" name="customs" id="customs" placeholder="ИНН"
                                                 data-tip="This is the text of the tooltip2">
                                             <span class="input-error" id="customs"></span>
                                             <span class="footnote">Для таможенного оформления</span>
@@ -582,15 +593,11 @@
                                 <img src="./svg/delivery-return-icon.svg" alt="delivery-return-icon">
                             </div>
                             <div class="delivery-return__text">
-                                <p>Обратная доставка товаров на склад при отказе —</p>
-                                <div class="delivery-return__group">
+                                <p>Обратная доставка товаров на склад при отказе —
                                     <span class="delivery-return__status-text">
                                         бесплатно
                                     </span>
-                                    <svg class="dotted-delivery">
-                                        <use href="./svg/svg-sprite.svg#dotted-delivery"></use>
-                                    </svg>
-                                </div>
+                                </p>
                             </div>
                             <p class="delivery-return__tooltip aside-return">
                                 Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно
@@ -756,7 +763,15 @@
                                         <input class="delivery-checkbox modal-box" type="radio" name="delivery-point" autocomplete="on" checked>
                                         <span class="delivery-custom-checkbox" id="point-delivery"></span>
                                     </label>
-                                    <span class="modal-point">Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
+                                    <div class="delivery-redact__group">
+                                        <span class="modal-point">г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1</span>
+                                        <div class="point-organization">
+                                            <svg class="point-organization__icon">
+                                                <use href="./svg/svg-sprite.svg#star-icon"></use>
+                                            </svg>
+                                            <span class="point-organization__about">Пункт выдачи</span>
+                                        </div>
+                                    </div>
                                     <svg class="delivery-item__trash-point">
                                         <use href="./svg/svg-sprite.svg#trash-icon"></use>
                                     </svg>
@@ -766,7 +781,16 @@
                                         <input class="delivery-checkbox modal-box" name="delivery-point" type="radio">
                                         <span class="delivery-custom-checkbox" id="point-delivery"></span>
                                     </label>
-                                    <span class="modal-point">пункт выдачи 2</span>
+                                    <div class="delivery-redact__group">
+                                        <span class="modal-point">г. Бишкек, микрорайон Джал, улица Ахунбаева Исы, д. 67/1</span>
+                                        <div class="point-organization">
+                                            <svg class="point-organization__icon">
+                                                <use href="./svg/svg-sprite.svg#star-icon"></use>
+                                            </svg>
+                                            <span class="point-organization__rate">4.99</span>
+                                            <span  class="point-organization__about">Пункт выдачи</span>
+                                        </div>
+                                    </div>
                                     <svg class="delivery-item__trash-point">
                                         <use href="./svg/svg-sprite.svg#trash-icon"></use>
                                     </svg>
@@ -776,7 +800,16 @@
                                         <input class="delivery-checkbox modal-box" name="delivery-point" type="radio">
                                         <span class="delivery-custom-checkbox" id="point-delivery"></span>
                                     </label>
-                                    <span class="modal-point">пункт выдачи 3</span>
+                                    <div class="delivery-redact__group">
+                                        <span class="modal-point">г. Бишкек, улица Табышалиева, д. 57</span>
+                                        <div class="point-organization">
+                                            <svg class="point-organization__icon">
+                                                <use href="./svg/svg-sprite.svg#star-icon"></use>
+                                            </svg>
+                                            <span class="point-organization__rate">4.99</span>
+                                            <span class="point-organization__about">Пункт выдачи</span>
+                                        </div>
+                                    </div>
                                     <svg class="delivery-item__trash-point">
                                         <use href="./svg/svg-sprite.svg#trash-icon"></use>
                                     </svg>
@@ -788,30 +821,39 @@
                             <ul class="delivery-redact" id="delivery-redact-courier">
                                 <li class="delivery-redact__item courier">
                                     <label>
-                                        <input class="delivery-checkbox modal-box" type="radio" name="address"  autocomplete="on" checked>
+                                        <input class="delivery-checkbox modal-box" type="radio" name="address"
+                                            autocomplete="on" checked>
                                         <span class="delivery-custom-checkbox modal-custom"></span>
                                     </label>
-                                    <span>Бишкек, улица Табышалиева, 57</span>
+                                    <div class="delivery-redact__group">
+                                        <span class="modal-point">Бишкек, улица Табышалиева, 57</span>
+                                    </div>
                                     <svg class="delivery-item__trash-courier">
                                         <use href="./svg/svg-sprite.svg#trash-icon"></use>
                                     </svg>
                                 </li>
                                 <li class="delivery-redact__item courier">
                                     <label>
-                                        <input class="delivery-checkbox modal-box" type="radio" name="address"  autocomplete="on">
+                                        <input class="delivery-checkbox modal-box" type="radio" name="address"
+                                            autocomplete="on">
                                         <span class="delivery-custom-checkbox modal-custom"></span>
                                     </label>
-                                    <span>Бишкек, улица Жукеева-Пудовкина, 77/1</span>
+                                    <div class="delivery-redact__group">
+                                        <span class="modal-point">Бишкек, улица Жукеева-Пудовкина, 77/1</span>
+                                    </div>
                                     <svg class="delivery-item__trash-courier">
                                         <use href="./svg/svg-sprite.svg#trash-icon"></use>
                                     </svg>
                                 </li>
                                 <li class="delivery-redact__item courier">
                                     <label>
-                                        <input class="delivery-checkbox modal-box" type="radio" name="address" autocomplete="on">
+                                        <input class="delivery-checkbox modal-box" type="radio" name="address"
+                                            autocomplete="on">
                                         <span class="delivery-custom-checkbox modal-custom"></span>
                                     </label>
-                                    <span>Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</span>
+                                    <div class="delivery-redact__group">
+                                        <span class="modal-point">Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</span>
+                                    </div>
                                     <svg class="delivery-item__trash-courier">
                                         <use href="./svg/svg-sprite.svg#trash-icon"></use>
                                     </svg>
@@ -830,5 +872,4 @@
     </div>
     <script src="./js/index.js" type="module"></script>
 </body>
-
 </html>

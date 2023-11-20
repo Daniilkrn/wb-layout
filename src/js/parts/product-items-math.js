@@ -1,4 +1,5 @@
 import { asideCalc } from "./aside-calc.js";
+import { asidePayTime } from "./aside-time-pay.js";
 import { headerCount } from "./header-counter.js";
 import { productState } from "./product-state.js";
 import { setDelivery } from "./set-delivery-items.js";
@@ -55,9 +56,8 @@ export function increaseCounter(increase, _idx) {
     findPriceOld.innerHTML = Math.floor(increaseItemOld).toLocaleString() + '&nbspсом';
 
     asideCalc();
-
     headerCount();
-    
+    asidePayTime();
     setDelivery();
 
     productState.setMathStatusIncrease(increase, _idx)
@@ -96,7 +96,7 @@ export function decreaseCounter(decrease, _idx) {
         asideCalc();
         headerCount();
         setDelivery();
-
+        asidePayTime();
         productState.setMathStatusDecrease(decrease,_idx)
     }
 }

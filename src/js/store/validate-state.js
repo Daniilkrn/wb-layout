@@ -1,5 +1,5 @@
 export const validateState = {
-    tips: [
+    tipsEmpty: [
         {
             name: "Укажите имя"
         },
@@ -13,7 +13,27 @@ export const validateState = {
             name: "Укажите номер телефона"
         },
         {
+            name: "Укажите ИНН"
+        },
+    ],
+    tipsError: [
+        {
+            name: "Укажите имя"
+        },
+        {
+            name: "Укажите фамилию"
+        },
+        {
+            name: "Проверьте электронный адрес"
+        },
+        {
+            name: "Формат: +9 999 999 99 99"
+        },
+        {
             name: "Проверьте ИНН"
         },
     ],
+    accept: [
+        
+    ]
 }

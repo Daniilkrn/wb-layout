@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/empy-cart.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./css/header/header.css">
+    <link rel="stylesheet" href="./css/footer/footer.css">
+    <link rel="stylesheet" href="./css/product-item/product-item.css">
+    <link rel="stylesheet" href="./css/aside/aside.css">
+    <link rel="stylesheet" href="./css/delivery-variant/delivery-variant.css">
+    <link rel="stylesheet" href="./css/tips.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/validate.css">
+    <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>WB - L0</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <button class="nav-burger">
+                        <svg class="burger-desktop">
+                            <use href="./svg/svg-sprite.svg#burger-desktop"></use>
+                        </svg>
+                    </button>
+                    <p class="header-title">
+                        Товары <br class="text-br"> и точка
+                    </p>
+                    <form class="header-search">
+                        <input class="search-input" type="search" name="search" placeholder="Я ищу...">
+                        <button class="search-submit" type="submit">
+                            <svg class="header-search-submit">
+                                <use href="./svg/svg-sprite.svg#header-search-submit"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="header-profile">
+                        <svg class="header-profile-icon">
+                            <use href="./svg/svg-sprite.svg#header-profile"></use>
+                        </svg>
+                        <p class="header-profile__description">
+                            Профиль
+                        </p>
+                    </div>
+                    <div class="header-cart">
+                        <svg class="header-cart-icon">
+                            <use href="./svg/svg-sprite.svg#header-cart"></use>
+                        </svg>
+                        <p class="header-cart__description">
+                            Корзина
+                        </p>
+                        <span class="header-cart__count"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="cart-content send-cart">
+                    <h1 class="cart-content__title">Ваш заказ оформлен</h1>
+                    <p class="cart-content__desc">Продолжить покупки можно на главной странице</p>
+                    <button class="cart-content__btn btn-main" onclick="window.location.href = 'index.html'">Перейти на главную</button>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <p class="footer__copyright">
+                        © 2022 ООО «Товары и точка»
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

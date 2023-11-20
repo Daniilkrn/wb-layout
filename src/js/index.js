@@ -28,11 +28,10 @@ const absentParent = document.querySelector('.absent-products');
 const paymentTime = document.querySelector('.delivery-payment-time__box');
 /*header-counter + header-counter-mobile*/
 const headerCounter = document.querySelector('.header-cart__count');
-const headerCounerMobile = document.querySelector('.header-cart__count.count-mobile')
+const headerCounerMobile = document.querySelector('.header-cart__count.count-mobile');
 
 /*загрузка initial values и функций для полей товаров корзины*/
 document.addEventListener("DOMContentLoaded", () => {
-
   modalPaymentActionBtn.forEach(btn => {
     btn.addEventListener('click', setModalPayment);
   })
@@ -41,25 +40,25 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener('click', setModalDelivery);
   })
   
-  paymentTime.addEventListener('click', asidePayTime)
+  paymentTime.addEventListener('click', asidePayTime);
 
   headerCounter.innerHTML = productState.totalInput();
   headerCounerMobile.innerHTML = productState.totalInput();
   
-  absentProductsTitleRemove(absentParent.querySelectorAll('.product-item').length)
+  absentProductsTitleRemove(absentParent.querySelectorAll('.product-item').length);
   
   spoilers();
   chooseItems();
   
   increases.forEach((increase, _idx) => {
       increase.addEventListener('click', () => {
-        increaseCounter(increase, _idx)
+        increaseCounter(increase, _idx);
       })
   })
 
   decreases.forEach((decrease, _idx) => {
     decrease.addEventListener('click', () => {
-        decreaseCounter(decrease, _idx)
+        decreaseCounter(decrease, _idx);
     })
   })
 
@@ -67,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll('.product-item__counter-digit').forEach((input, _idx) => {
 
-    input.value = productState.initalItems[_idx].inputValue
+    input.value = productState.initalItems[_idx].inputValue;
     productState.setInitialStatus(input,_idx);
 
     input.addEventListener('change', (e) => {
@@ -79,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return
       }
 
-      if(input.value > productState.initalItems[_idx].balance) return input.value = 1
+      if(input.value > productState.initalItems[_idx].balance) return input.value = 1;
    
       const inputChangedValue = input.value * productState.initalItems[_idx].price;
       const inputChangedValueOld = input.value * productState.initalItems[_idx].oldPrice;
@@ -88,24 +87,21 @@ document.addEventListener("DOMContentLoaded", () => {
       productState.initalItems[_idx].totalOldPrice = inputChangedValueOld;
       productState.initalItems[_idx].inputValue = Number(input.value);
 
-      itemInputChange(inputChangedValue, inputChangedValueOld, _idx, e)
+      itemInputChange(inputChangedValue, inputChangedValueOld, _idx, e);
     })
   })
 
   document.querySelectorAll('.price-content').forEach((price, _idx) => {
-
-
-    price.innerHTML = Math.floor(productState.initalItems[_idx].price * productState.initalItems[_idx].inputValue).toLocaleString()
-    productState.initalItems[_idx].totalPrice = productState.initalItems[_idx].price * productState.initalItems[_idx].inputValue
+    price.innerHTML = Math.floor(productState.initalItems[_idx].price * productState.initalItems[_idx].inputValue).toLocaleString();
+    productState.initalItems[_idx].totalPrice = productState.initalItems[_idx].price * productState.initalItems[_idx].inputValue;
     
     if ((price.textContent).length > 7) {
-      price.style = "font-size: 16px"
+      price.style = "font-size: 16px";
     }
-
   })
 
   document.querySelectorAll('.price-desc').forEach(span => {
-    span.innerHTML = 'сом'
+    span.innerHTML = 'сом';
   })
 
   document.querySelectorAll('.product-item__balance-count').forEach((span, _idx )=> {
@@ -115,13 +111,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll('.old-value').forEach((oldPrice, _idx) => {
     oldPrice.innerHTML = Math.floor(productState.initalItems[_idx].oldPrice * productState.initalItems[_idx].inputValue).toLocaleString() + '&nbspсом';
-    productState.initalItems[_idx].totalOldPrice = productState.initalItems[_idx].totalOldPrice * productState.initalItems[_idx].inputValue
+    productState.initalItems[_idx].totalOldPrice = productState.initalItems[_idx].totalOldPrice * productState.initalItems[_idx].inputValue;
 
-    const parent = oldPrice.closest('.total-info')
+    const parent = oldPrice.closest('.total-info');
     const hover = parent.querySelector('.old-value-hover');
 
     oldPrice.addEventListener('mouseover', () => {
-      hover.style.display = "block"
+      hover.style.display = "block";
       hover.innerHTML = `
       <div class="all-discount">
         <span class="all-discount__percent">Скидка 55%</span>
@@ -131,18 +127,18 @@ document.addEventListener("DOMContentLoaded", () => {
           <span class="all-discount__percent">Скидка покупателя 10%</span>
           <span class="all-discount__content">−30 сом</span>
       </div>
-      `
+      `;
     })
 
     oldPrice.addEventListener('mouseleave', () => {
-      hover.style.display = "none"
+      hover.style.display = "none";
     })
 
   })
 
   document.querySelectorAll('.prodcut-item__saler-icon').forEach((iconSaler,_idx) => {
     iconSaler.addEventListener('mouseover', () => {
-      salerTip(iconSaler,_idx)
+      salerTip(iconSaler,_idx);
     })
   });
 
@@ -152,11 +148,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const hover = parent.querySelector('.delivery-return__tooltip');
 
     status.addEventListener('mouseover', () => {
-      hover.style.display = "block"
+      hover.style.display = "block";
     })
 
     status.addEventListener('mouseleave', () => {
-      hover.style.display = "none"
+      hover.style.display = "none";
     })
   })
 

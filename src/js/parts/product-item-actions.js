@@ -1,5 +1,6 @@
 import {absentProductsTitleRemove, cartProductsTitleRemove} from "./absent-products-title.js";
 import { asideCalc } from "./aside-calc.js";
+import { asidePayTime } from "./aside-time-pay.js";
 import { headerCount } from "./header-counter.js";
 import { setDelivery } from "./set-delivery-items.js";
 import { filterItems } from "./set-spoiler.js";
@@ -9,7 +10,6 @@ const likes = document.querySelectorAll('.product-item__favorites-icon');
 
 export function actions() {
     trashes.forEach((trash,_idx) => {
-
         trash.addEventListener('click', () => {
 
             let parent = trash.closest(".product-item");
@@ -28,6 +28,7 @@ export function actions() {
             } else {
                 return absentProductsTitleRemove(parentGrand.children.length)
             }
+            asidePayTime();
         })
     })
 
@@ -39,5 +40,6 @@ export function actions() {
             like.classList.toggle('product-item__favorites-icon--active', false);
         })
     })
+
 
 }

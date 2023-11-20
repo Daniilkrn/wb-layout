@@ -31,14 +31,18 @@
     max-width: 500px;
 }
 
-.modal-payments__inner {
+.modal-payments__inner,
+.modal-delivery__inner  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.btn-container{
     width: 100%;
 }
 
-.modal-delivery__inner {
-    width: 100%;
-    height: 100%;
-}
 
 .modal-payments__title {
     display: flex;
@@ -216,7 +220,7 @@
     display: none;
 }
 
-.delivery-redact__item span {
+.delivery-redact__item .modal-point {
     color:  #000;
     /* Сайт/Текст */
     font-family: Segoe UI;
@@ -279,4 +283,16 @@
     font-weight: 700;
     line-height: 28px; 
     letter-spacing: -0.2px;
+}
+
+.point-organization__icon{
+    margin-right: 8px;
+}
+
+.point-organization__about{
+    color:  #A0A0A4;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; 
 }

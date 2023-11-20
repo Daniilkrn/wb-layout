@@ -8,7 +8,6 @@ export function asidePayTime() {
     let totalPrice = 0;
 
     const arr = productState.totalFilterChecked();
-
     arr.forEach(obj => {
        totalPrice += obj.totalPrice;
     })
