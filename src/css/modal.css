@@ -141,13 +141,11 @@
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
     color: #FFF;
     text-align: center;
-    /* Сайт/H4 */
     font-family: Segoe UI;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 150% */
-
+    line-height: 24px; 
 }
 
 .modal-delivery__title {

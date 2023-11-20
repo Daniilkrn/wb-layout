@@ -11,7 +11,7 @@ export function absentProductsTitleRemove(items) {
         setCheckAbsent = true 
     }
     const nounRes = getNounAbsent(items, 'Отсутствует', 'Отсутствуют')
-        + '&nbsp;' + '&nbsp;' + '·' + '&nbsp;' + items + '&nbsp;' + getNoun(items, 'товар', 'товара', 'товаров');
+    + '&nbsp;' + '·' + '&nbsp;' + items + '&nbsp;' + getNoun(items, 'товар', 'товара', 'товаров');
 
     absentTitleText.innerHTML = nounRes
 }

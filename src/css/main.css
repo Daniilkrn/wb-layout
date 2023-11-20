@@ -287,12 +287,13 @@ a {
 }
 
 .absent-products__text {
-    font-family: 'Segoe UI Semibold';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #000;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px; 
+    letter-spacing: 0px;
 }
 
 .absent-products__title {
@@ -442,13 +443,10 @@ a {
 .input-desc{
     position: absolute;
     color:  #A0A0A4;
-    font-family: Segoe UI;
-    font-size: 12px;
+    font-family: 'Segoe UI Regular';
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: 14px; 
-    top: -18px;
+    top: -23px;
 }
-
-
-
